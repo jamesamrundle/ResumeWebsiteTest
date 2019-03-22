@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import '../public/css/layout.css'
+import '../public/css/layout.css'
 
 
 class About  extends Component {
@@ -8,7 +8,6 @@ class About  extends Component {
         super(props);
         this.state = {
             name: "James Rundle",
-            image: "../public/images/JamesBoeing.jpg",
             bio: "Hi " +
                 "I am " +
                 "James\n" +
@@ -20,21 +19,29 @@ class About  extends Component {
             address : { street : "123 Drury Lane",
                         theRest : "Seatle, WA 12345"},
             phone: "111-222-3333",
-            email: "jamesamrundle@gmail.com"
+            email: "jamesamrundle@gmail.com",
+            image: "./images/MYFACE.jpg"
         }
     }
 
     render() {
         let {bio,street,city,state,address,zip,phone,email,name,image} = this.state;
         return (
-            <section id="" >
-            <div className="">
-                <img className="" src="./images/MYFACE.jpg" />
-                <div>
+            <section id="about" >
+            <div className="grid">
+
+                <div className="pic">
+                <img className="profile-pic" src="./images/MYFACE.jpg" />
+                </div>
+
+                <div className="main-col">
+
+
                     <h2>About Me</h2>
                     <p>{bio}</p>
-                </div>
-                <div>
+
+
+                    <div className="contact-details">
                     <h2>Contact Details</h2>
                     <p>
                         <span>{name}</span> <br />
@@ -44,7 +51,16 @@ class About  extends Component {
                         <span>{phone}</span><br />
                         <span>{email}</span><br />
                     </p>
+                    </div>
+
+                <div className="download">
+                    <p>
+                        <a href="" className="button"><i ></i>Download Resume</a>
+                    </p>
                 </div>
+
+            </div>
+
             </div>
             </section>
         );
