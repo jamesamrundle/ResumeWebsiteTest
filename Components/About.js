@@ -13,13 +13,13 @@ class About  extends Component {
                 "I am " +
                 "James\n" +
                 "I like programming!",
-            street: "437 North Maxwell",
-            city: "McPherson",
-            state: "Kansas",
+            street: "123 Drury Lane",
+            city: "Seattle",
+            state: "Washington",
             zip: "67460",
-            address : { street : "437 North Maxwell",
-                        theRest : "McPherson, KS 67460"},
-            phone: "816-679-3017",
+            address : { street : "123 Drury Lane",
+                        theRest : "Seatle, WA 12345"},
+            phone: "111-222-3333",
             email: "jamesamrundle@gmail.com"
         }
     }
