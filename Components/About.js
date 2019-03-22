@@ -12,10 +12,12 @@ class About  extends Component {
                 "I am " +
                 "James\n" +
                 "I like programming!",
-            street: "123 Drury Lane",
-            city: "Seattle",
-            state: "Washington",
-            zip: "67460",
+            address0:{
+                street: "123 Drury Lane",
+                city: "Seattle",
+                state: "Washington",
+                zip: "67460",
+            },
             address : { street : "123 Drury Lane",
                         theRest : "Seatle, WA 12345"},
             phone: "111-222-3333",
@@ -25,7 +27,7 @@ class About  extends Component {
     }
 
     render() {
-        let {bio,street,city,state,address,zip,phone,email,name,image} = this.state;
+        let {bio,street,city,state,address,zip,phone,email,name,image, address0} = this.props.data;
         return (
             <section id="about" >
             <div className="grid">
@@ -46,7 +48,7 @@ class About  extends Component {
                     <p>
                         <span>{name}</span> <br />
                         <span>{address.street}</span> <br />
-                        <span>{address.theRest}</span><br />
+                        <span>{address.city}{address.state},{address.zip}</span><br />
                         <br/>
                         <span>{phone}</span><br />
                         <span>{email}</span><br />

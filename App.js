@@ -6,10 +6,37 @@ import Resume from './Components/Resume';
 import Footer from './Components/Footer';
 
 class App extends Component {
-  render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: "James Rundle",
+            bio: "Hi " +
+                "I am " +
+                "James\n" +
+                "I like programming!",
+            address:{
+                street: "123 Drury Lane",
+                city: "Seattle",
+                state: "Washington",
+                zip: "67460",
+            },
+            phone: "111-222-3333",
+            email: "jamesamrundle@gmail.com",
+            image: "./images/MYFACE.jpg",
+
+            objective: "Interested in securing an internship in which I both leverage and expand my coding skills",
+            occupation: "Aspiring Software Developer"
+
+        }
+    }
+
+
+    render() {
     return (
         <div className="App">
-            <About />
+            <Header data={this.state}/>
+            <About  data={this.state}/>
+
         </div>
     );
   }

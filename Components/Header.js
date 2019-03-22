@@ -3,11 +3,30 @@ import React, {Component} from 'react';
 
 
 class Header extends Component {
-    render() {
-        return (
-            <div>
 
-            </div>
+
+    render() {
+        let {name, occupation, objective, address} = this.props.data;
+
+        return (
+            <header id="home">
+
+                <nav id="nav-wrap">
+                    <ul id="nav" className="nav">
+                        <li><a href="#home" className="smoothscroll" >home</a></li>
+                        <li><a href="#about" className="smoothscroll">about</a></li>
+                        <li><a>resume</a></li>
+                    </ul>
+                </nav>
+
+                <div className="row banner banner-text" >
+
+                <h1>{name} <span style={{"font-size":6+"pt"}}>thats me</span></h1>
+                    <h3> I'm a {address.city} based <span>{occupation}</span> who is {objective}</h3>
+                </div>
+
+
+            </header>
         );
     }
 }
