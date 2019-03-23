@@ -21,7 +21,7 @@ class Header extends Component {
 
                 <div className="row banner banner-text" >
 
-                <h1>{name} <span style={{"font-size":6+"pt"}}>thats me</span></h1>
+                <h1>{name} <span style={{"font-size":9+"pt","font":"helvetica" }}>thats me</span></h1>
                     <h3> I'm a {address.city} based <span>{occupation}</span> who is {objective}</h3>
                 </div>
 

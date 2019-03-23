@@ -13,7 +13,9 @@ class App extends Component {
             bio: "Hi " +
                 "I am " +
                 "James\n" +
-                "I like programming!",
+                "I like programming!\n" +
+                ` \n3 time semi-pro tummy-stick league champion, midwest division`,
+
             address:{
                 street: "123 Drury Lane",
                 city: "Seattle",
@@ -36,7 +38,7 @@ class App extends Component {
         <div className="App">
             <Header data={this.state}/>
             <About  data={this.state}/>
-
+            <Resume/>
         </div>
     );
   }

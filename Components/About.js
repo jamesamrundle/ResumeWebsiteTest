@@ -11,7 +11,8 @@ class About  extends Component {
             bio: "Hi " +
                 "I am " +
                 "James\n" +
-                "I like programming!",
+                "I like programming!\n" +
+                " 3 time semi-pro tummy-stick league champion, midwest division  U+1F60E",
             address0:{
                 street: "123 Drury Lane",
                 city: "Seattle",
@@ -48,7 +49,7 @@ class About  extends Component {
                     <p>
                         <span>{name}</span> <br />
                         <span>{address.street}</span> <br />
-                        <span>{address.city}{address.state},{address.zip}</span><br />
+                        <span>{address.city} {address.state}, {address.zip}</span><br />
                         <br/>
                         <span>{phone}</span><br />
                         <span>{email}</span><br />
