@@ -1,5 +1,5 @@
 {
-  "main": {
+  main: {
     "name":"Jimes Gramble",
     "occupation":"Aspiring Don Quixote. ",
     "description":"I enjoy sitting in comfortable spaces, consuming lethal amounds of caffine, and playing the hermit game",
@@ -103,7 +103,7 @@
         "name":"Education",
         "level":"50%"
       }
-      
+
     ]
   },
   "portfolio":{

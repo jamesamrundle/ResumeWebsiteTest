@@ -34,7 +34,7 @@ class About  extends Component {
             <div className="grid">
 
                 <div className="pic">
-                <img className="profile-pic" src="./images/MYFACE.jpg" />
+                <img className="profile-pic" src="../images/MYFACE.jpg" />
                 </div>
 
                 <div className="main-col">
@@ -58,7 +58,7 @@ class About  extends Component {
 
                 <div className="download">
                     <p>
-                        <a href="" className="button"><i ></i>Download Resume</a>
+                        <a href="../public/pika.png" className="button" download><button>Download Resume</button></a>
                     </p>
                 </div>
 
